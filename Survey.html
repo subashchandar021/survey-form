@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <style>
+        .survey{
+            width:50%;
+            border:1px solid;
+        }
+        .fa{
+            color:brown;
+        }
+        table{
+            width:100%;
+        }
+        td{
+            text-align: center;
+        }
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        /* .bfre{
+            width: 100%;
+            padding: 100px 100px;
+            margin: 8px 0;
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="survey">
+            <lable for="Name"><b>Name*</b></lable><br>
+            <input type="text" name="name" id="Name">
+            <label for="lastname"></label>
+            <input type="text" name="name" id="lastname">
+            <div style="text-align: left;">
+               <small>First </small> 
+               <small style="margin-left:153px">Last</small> 
+            </div>
+                
+            
+           
+            <lable for="mail"><b>Email*</b></lable><br>
+            <input type="text" name="mail" id="mail">
+            <div class="rating">
+                <h>
+                    <b>Your Experience*</b><br>
+                </h>
+                <i class="fa fa-star-o fa-1x"></i>
+                <i class="fa fa-star-o fa-1x"></i>
+                <i class="fa fa-star-o fa-1x"></i>
+                <i class="fa fa-star-o fa-1x"></i>
+                <i class="fa fa-star-o fa-1x"></i>
+            </div>
+            <div class="para">
+                Overall,how would you rate your experience withus?
+            </div>
+            <div class="hd">
+                <h>
+                    <strong>How satisfied are you with*</strong>
+                </h>
+            </div>
+            <table>
+                <tr>
+                    <th> </th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+                <tr>
+                    <td>Purchase</td>
+                    <td><input type="checkbox" name="very unsatisfied" id="vunsatisfied"></td>
+                    <td><input type="checkbox" name="unsatisfied" id="unsatisfied"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="satisfied" id="satisfied"></td>
+                    <td><input type="checkbox" name="verysatisfied" id="vsatisfied"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="checkbox" name="very unsatisfied" id="vunsatisfied"></td>
+                    <td><input type="checkbox" name="unsatisfied" id="unsatisfied"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="satisfied" id="satisfied"></td>
+                    <td><input type="checkbox" name="verysatisfied" id="vsatisfied"></td>
+                </tr>
+                <tr>
+                    <td>Company Overall</td>
+                    <td><input type="checkbox" name="very unsatisfied" id="vunsatisfied"></td>
+                    <td><input type="checkbox" name="unsatisfied" id="unsatisfied"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="satisfied" id="satisfied"></td>
+                    <td><input type="checkbox" name="verysatisfied" id="vsatisfied"></td>
+                </tr>
+            </table>
+            <div class="edh">
+                <h>
+                    <strong>How likely are you to*</strong>
+                </h>
+            </div>
+            <table>
+                <tr>
+                    <th> </th>
+                    <th>Very Unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>likely</th>
+                    <th>Very likely</th>
+                </tr>
+                <tr>
+                    <td>Buy from us again</td>
+                    <td><input type="checkbox" name="very unlikely" id="vunlikely"></td>
+                    <td><input type="checkbox" name="unlikely" id="unlikely"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="likely" id="likely"></td>
+                    <td><input type="checkbox" name="verylikely" id="vlikely"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our<br>product to others</td>
+                    <td><input type="checkbox" name="very unlikely" id="vunlikely"></td>
+                    <td><input type="checkbox" name="unlikely" id="unlikely"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="likely" id="likely"></td>
+                    <td><input type="checkbox" name="verylikely" id="vlikely"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our<br>company to others</td>
+                    <td><input type="checkbox" name="very unlikely" id="vunlikely"></td>
+                    <td><input type="checkbox" name="unlikely" id="unlikely"></td>
+                    <td><input type="checkbox" name="neutral" id="neutral"></td>
+                    <td><input type="checkbox" name="likely" id="likely"></td>
+                    <td><input type="checkbox" name="verylikely" id="vlikely"></td>
+                </tr>
+             </table>
+             <div class="addcom">
+                 <h>
+                     <strong>Additional comments or suggestions</strong>
+                 </h>
+             </div>
+             <div class="bfre">
+                <textarea id="comment" name="comment" rows="7"cols="100"></textarea>
+             </div>
+             <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
